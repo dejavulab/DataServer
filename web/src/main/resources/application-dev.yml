@@ -1,0 +1,17 @@
+spring:
+  dubbo:
+    application:
+      name: Consumer
+    registry:
+      protocol: zookeeper
+      address: 192.168.3.1:2181,192.168.3.2:2182
+    scan: com
+  data:
+    mongodb:
+      #uri: mongodb://root(userName):root(password)@192.168.3.1:27017/UserCollection
+      host: 192.168.3.1
+      port: 27017
+      #username: user
+      #password: abc123
+      database: UserCollection
+      #authenticationDatabase: zen
